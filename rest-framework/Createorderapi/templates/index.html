@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Orders</title>
+</head>
+<body>
+   <center>
+       <h1></h1>
+       <h4>Order</h4>
+       <hr/>
+       <table border="1">
+           <tr>
+               <th>id</th>
+               <th>orderid</th>
+               <th>orderdate</th>
+               <th>user_email</th>
+               <th>pos_name</th>
+
+           </tr>
+           {%for data in Orders  %}
+           <tr>
+              <td>{{data.id}}</td>
+              <td>{{data.orderid}}</td>
+              <td>{{data.orderdate}}</td>
+              <td>{{data.user_email}}</td>
+              <td>{{data.pos_name}}</td>
+
+           {%endfor%}
+           </tr>
+       </table>s
+
+   </center>
+
+
+
+</body>
+</html>
